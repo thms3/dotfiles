@@ -265,6 +265,13 @@ noremap <leader>m :silent! :make! \| :redraw!<cr>
 autocmd FileType python map <buffer> <F5> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 autocmd FileType python imap <buffer> <F5> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 
+" Copy from vim workspace to clopboard
+nnoremap <C-y> "+y
+vnoremap <C-y> "+y
+
+" Paste from vim workspace to clipboard
+nnoremap <C-p> "+gP
+vnoremap <C-p> "+gP
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Persistence options
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
